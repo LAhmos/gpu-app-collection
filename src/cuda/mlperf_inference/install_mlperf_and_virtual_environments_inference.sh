@@ -9,13 +9,10 @@ echo "--------------------------------------------------------------"
 # exit when any command fails
 set -e
 
-if [ ! -d "./mlc" ]; then
-echo "create virtual environment"
-python3 -m venv mlc
-fi
-. ./mlc/bin/activate && 
-pip install mlc-scripts && 
-deactivate &&
+
+
+pip install mlc-scripts  
+
 echo "mlcommon virtual evnironment created & mlcr scripts installed. Done"
 
 # This script will prepare the python virtual
